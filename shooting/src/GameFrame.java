@@ -13,7 +13,7 @@ public class GameFrame extends MyFrame
 			GameWorld.player.draw(this);
 			GameWorld.player.move();
 			movePlayerBullets();
-			sleep(0.03);
+			sleep(0.01);
 		}
 		
 	}
