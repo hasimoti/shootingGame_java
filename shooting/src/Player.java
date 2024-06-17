@@ -18,7 +18,7 @@ public class Player extends Character implements KeyListener
 		{
 			vx=5;
 		}
-		if(e.getKeyCode()==KeyEvent.VK_SPACE) 
+		if(e.getKeyCode()==KeyEvent.VK_B) 
 		{
 			GameWorld.playerBullets.add(new PlayerBullet(x,y,0,-10));
 			System.out.println("弾の数="+ GameWorld.playerBullets.size());
