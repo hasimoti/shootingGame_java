@@ -17,7 +17,7 @@ public class GameFrame extends MyFrame
 			movePlayerBullets();
 			
 			moveEnemmies();
-			sleep(0.01);
+			sleep(0.03);
 		}
 		
 	}
