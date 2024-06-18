@@ -7,6 +7,13 @@ public class StraightEnemy extends Enemy
 		super(x, y, vx, vy);
 		
 	}
+	public void draw(MyFrame f) 
+	{
+		f.setColor(0,0,0);
+		f.fillRect(x, y-10, 14, 15);
+		f.setColor(0,0,0);
+		f.fillRect(x+2, y, 10, 15);
+	}
 
 	
 }
