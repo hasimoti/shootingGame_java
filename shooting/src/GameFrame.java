@@ -82,6 +82,10 @@ public class GameFrame extends MyFrame
 					{
 						System.out.println("あたり");
 						hits++;
+						e.life--;
+					}
+					if(e.life<=0) 
+					{
 						GameWorld.enemies.remove(j);
 					}
 					else 
@@ -104,7 +108,7 @@ public class GameFrame extends MyFrame
 	}
 	public boolean CheckHit(Character a,Character b)
 	{
-		return Math.abs(a.x-b.x)<=30 && Math.abs(a.y-b.y)<=30;
+		return Math.abs(a.x-b.x)<=18 && Math.abs(a.y-b.y)<=10;
 		
 	}
 }
