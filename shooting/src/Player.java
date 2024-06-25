@@ -33,7 +33,11 @@ public class Player extends Character implements KeyListener
 			GameWorld.playerBullets.add(new PlayerBullet(x,y,0,-10));
 			System.out.println("弾の数="+ GameWorld.playerBullets.size());
 		}
-		/*
+		if(e.getKeyCode()==KeyEvent.VK_ENTER) 
+		{
+			System.out.println("Enterキーが押されました");
+			GameWorld.enterPressed=true;
+		}
 		if(e.getKeyCode()==KeyEvent.VK_UP) 
 		{
 			vy=-5;
@@ -42,7 +46,7 @@ public class Player extends Character implements KeyListener
 		{
 			vy=5;
 		}
-		*/
+		
 	}
 	
 	public void keyReleased(KeyEvent e) 
@@ -55,7 +59,7 @@ public class Player extends Character implements KeyListener
 		{
 			vx=0;
 		}
-		/*
+		
 		if(e.getKeyCode()==KeyEvent.VK_UP) 
 		{
 			vy=0;
@@ -64,7 +68,7 @@ public class Player extends Character implements KeyListener
 		{
 			vy=0;
 		}
-		*/
+		
 	}
 	
 	public void keyTyped(KeyEvent e) {
@@ -77,10 +81,10 @@ public void move()
 		super.move();
 		if(x<0)x=0;
 		if(x>370) x=370;
-		/*
-		if(y<30)y=30;
+		
+		if(y<180)y=180;
 		if(y>370) y=370;
-		*/
+		
 	}
 	
 }
