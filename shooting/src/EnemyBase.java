@@ -18,7 +18,7 @@ public class EnemyBase extends Enemy
 		}
 		if(Math.random()<0.05) 
 		{
-			GameWorld.enemies.add(new DropEnemy(x,y,0,GameWorld.stage*GameWorld.stage));
+			GameWorld.enemies.add(new DropEnemy(x,y,0,GameWorld.stage));
 		}
 		if(Math.random()<0.05) 
 		{

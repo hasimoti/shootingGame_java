@@ -17,7 +17,7 @@ public class DropEnemy extends Enemy
 	public void move() 
 	{
 		super.move();
-		vy+=0.1;
+		vy+=0.3;
 	}
 	
 	
